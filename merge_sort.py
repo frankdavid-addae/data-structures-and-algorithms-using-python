@@ -7,7 +7,7 @@ def merge_sort(py_list):
     Conquer: Recursively sort the sub-lists created in the previous step
     Combine: Merge the sorted sub-lists create in the previous step
 
-    Takes O(n log n) time
+    Takes O(kn log n) time
     """
 
     if len(py_list) <= 1:
@@ -25,7 +25,7 @@ def split(py_list):
     Divides the unsorted list at midpoint into sub-lists
     Returns two sub-lists - left and right
 
-    Takes overall O(log n) time
+    Takes overall O(k log n) time
     """
     mid = len(py_list) // 2
     left = py_list[:mid]
